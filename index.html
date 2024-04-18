@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body{
+        }
+        table{
+            height:auto;
+            width:80%;
+            margin:auto;
+            display: flex;
+            gap:50px;
+            flex-wrap: wrap;
+        }
+        .component{
+            min-height:300px;
+            width:250px;
+        padding:0px 20px;
+            background-color:blueviolet;
+            color:#000;
+        }
+        .hide{
+            display: none;
+        }
+        button{
+            margin-top:40px;
+        }
+        .scoreBoard{
+            height:40px;
+            width:50%;
+            margin:auto;
+            background:green;
+            color:white;
+            font-size:20px;
+            display: grid;
+            place-items:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin"><a href="form.html">admin</a></div>
+    <div id="score"class="hide">
+        <div class="scoreBoard">Your score=0</div>
+    </div>
+<table id="table">
+<div>note:password=admin</div>
+</table>
+    <script src="./index.js"></script>
+</body>
+</html>

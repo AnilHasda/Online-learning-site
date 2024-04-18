@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+        }
+        form{
+            margin:auto;
+            margin-top:100px;
+            button{
+                margin-top:30px;
+            }
+            input{
+                margin-top:50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        login to access the admin panel<br>
+        <input type="password"id="input"><br>
+        <button onclick="check(event)">submit</button>
+    </form>
+    <script>
+        let input=document.getElementById("input");
+        const check=(e)=>{
+            e.preventDefault();
+            if(input.value==="admin"){
+                window.location.href="admin.html";
+            }
+            else{
+                alert("please enter correct password to access the admin panel")
+            }
+        }
+    </script>
+</body>
+</html>
