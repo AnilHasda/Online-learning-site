@@ -8,11 +8,9 @@
   body {
     background-color: #f7f9fd;
   }
-  .container {
-    width: 90vw;
-    max-width: 62.5em;
-    position: relative;
-    margin: auto;
+  #container{
+    height:auto;
+    display: flex;
   }
   .add-flashcard-con {
     display: flex;
@@ -164,16 +162,8 @@
   .hide {
     display: none;
   }
-  /*styling of table*/
-  table{
-    height:auto;
-    width:80%;
-    margin:auto;
-    tr{
-        height:40px;
-    }
-  }
-  @media screen and (max-width: 800px) {
+  /*styling of container*/
+    @media screen and (max-width: 800px) {
     .card-list-container {
       grid-template-columns: 1fr 1fr;
       gap: 0.8em;
